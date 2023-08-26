@@ -32,6 +32,9 @@ def detailExcel():  # 生成详细数据Excel文件
         for info in detailData:  # 遍历视频详细信息列表
             df = df._append(info, ignore_index = True)  # 将单个视频详细信息添加到DataFrame对象中
         df.to_excel(dailyPath + '/detail.xlsx', index = False)  # 将DataFrame对象写入Excel文件中
+        htmlTable = df.to_html()
+        with open(dailyPath + '/detail.html', 'w') as html:
+            html.write(htmlTable)
 
 if __name__ == "__main__":
     detailExcel()
