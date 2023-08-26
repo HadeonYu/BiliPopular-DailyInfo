@@ -1,9 +1,7 @@
 import requests
 import json
 import os
-from datetime import datetime
-
-from requests.api import request
+from Paths import Paths
 
 url = 'https://api.bilibili.com/x/web-interface/popular'  # 定义API接口URL
 
@@ -38,11 +36,12 @@ def getData():  # 定义获取数据的函数
             videosInfo[i]['owner'].update(follower) # 粉丝数信息加入到owner值中
         else:
             print(resp.status_code)
-    date = str(datetime.now().date())  # 获取当前日期
-    dailyPath = '../dailyData/' + date  # 定义每日数据存储路径
+
+    paths = Paths()
+    dailyPath = paths.dailyPath()  # 定义每日数据存储路径
     if not os.path.exists(dailyPath):  # 判断路径是否存在
-        os.mkdir(dailyPath)  # 如果不存在，创建路径
-    with open(dailyPath + '/list.json', 'w') as daily:  # 打开每日数据文件
+        os.makedirs(dailyPath)  # 如果不存在，创建路径
+    with open(paths.jsonPath(), 'w') as daily:  # 打开每日数据文件
         json.dump(data, daily, ensure_ascii = False, indent = 2)  # 将数据写入文件，格式化输出
 if __name__ == "__main__":
     getData()

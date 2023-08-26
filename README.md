@@ -13,8 +13,8 @@ TODO：
 ## 正文：
 <h2 align=center>2023.8.26</h2>
 
-[详细数据](dailyData/2023-08-26/detail.md)
+[详细数据](dailyData/2023/08/26/detail.md)
 
 <h2 align=center>2023.8.25</h2>
 
-[详细数据](dailyData/2023-08-25/detail.md)
+[详细数据](dailyData/2023/08/25/detail.md)

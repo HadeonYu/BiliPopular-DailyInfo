@@ -1,11 +1,10 @@
 import pandas as pd
 import json
-from datetime import datetime
+from Paths import Paths
 
 def detailExcel():  # 生成详细数据Excel文件
-    date = str(datetime.now().date())  # 获取当前日期
-    dailyPath = '../dailyData/' + date  # 定义每日数据存储路径
-    with open(dailyPath + '/list.json', 'r') as jsonFile:  # 打开每日数据文件
+    paths = Paths()
+    with open(paths.jsonPath(), 'r') as jsonFile:  # 打开每日数据文件
         jsonData = json.load(jsonFile)  # 读取JSON格式数据
         detailData = []  # 定义空列表，用于存储视频详细信息
         for video in jsonData['list']:
@@ -31,8 +30,8 @@ def detailExcel():  # 生成详细数据Excel文件
         df = pd.DataFrame()  # 创建空的DataFrame对象
         for info in detailData:  # 遍历视频详细信息列表
             df = df._append(info, ignore_index = True)  # 将单个视频详细信息添加到DataFrame对象中
-        df.to_excel(dailyPath + '/detail.xlsx', index = False)  # 将DataFrame对象写入Excel文件中
-        df.to_markdown(dailyPath + '/detail.md', index = True)
+        df.to_excel(paths.xlsxPath(), index = False)  # 将DataFrame对象写入Excel文件中
+        df.to_markdown(paths.mdPath(), index = True)
 
 if __name__ == "__main__":
     detailExcel()
