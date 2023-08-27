@@ -6,7 +6,7 @@ class Today:
         self.year = self.date.year  # 获取当前年份
         self.month = self.date.month  # 获取当前月份
         self.day = self.date.day  # 获取当前日期
-        self.date = str(datetime.date(datetime.now()))  # 将日期转换为字符串
+        self.date = str(self.date)  # 将日期转换为字符串
 
     def selfDef(self, date):
         self.date = date  # 将日期属性设置为指定日期
@@ -17,17 +17,17 @@ class Today:
 class Paths:
     def __init__(self):
         self.today = Today()  # 创建Today对象，获取当前日期
-        #self.today.selfDef('2023-08-25')
+        self.dailyPath = '../dailyData/' + str(self.today.date).replace('-','/')    # 每日数据文件夹路径
+        self.jsonPath = self.dailyPath + '/list.json'   # JSON文件路径
+        self.xlsxPath = self.dailyPath + '/detail.xlsx' # Excel文件路径
+        self.mdPath = self.dailyPath + '/detail.md'     # Markdown文件路径
 
-    def dailyPath(self):
-        dailyPath = str(self.today.date).replace('-','/')  # 将日期字符串中的'-'替换为'/'
-        return '../dailyData/' + dailyPath  # 返回每日数据存储路径
+    def changeDate(self, date):
+        self.today.selfDef(date)
+        self.dailyPath = '../dailyData/' + str(self.today.date).replace('-','/')    # 每日数据文件夹路径
+        self.jsonPath = self.dailyPath + '/list.json'   # JSON文件路径
+        self.xlsxPath = self.dailyPath + '/detail.xlsx' # Excel文件路径
+        self.mdPath = self.dailyPath + '/detail.md'     # Markdown文件路径
 
-    def jsonPath(self):
-        return self.dailyPath() + '/list.json'  # 返回每日数据JSON文件路径
-
-    def xlsxPath(self):
-        return self.dailyPath() + '/detail.xlsx'  # 返回每日数据Excel文件路径
-
-    def mdPath(self):   # 返回每日数据Markdown文件路径
-        return self.dailyPath() + '/detail.md'
+if __name__ == "__main__":
+    exit()

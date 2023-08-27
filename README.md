@@ -7,10 +7,15 @@
 
 TODO：
 - [ ] ip属地存在，但爬取数据为未知
+- [x] 给获取信息过程加进度条
 - [ ] 每日部分数据可视化
 - [ ] 实现每日自动更新
 
 ## 正文：
+<h2 align=center>2023.8.27</h2>
+
+[详细数据](dailyData/2023/08/27/detail.md)
+
 <h2 align=center>2023.8.26</h2>
 
 [详细数据](dailyData/2023/08/26/detail.md)
