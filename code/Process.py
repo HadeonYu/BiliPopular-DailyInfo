@@ -1,3 +1,4 @@
+from ctypes import alignment
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -9,7 +10,7 @@ from Paths import Paths
 paths = Paths()
 paths.changeDate('2023-08-25')
 
-def detailExcel():  # 生成详细数据Excel文件
+def detail():  # 生成详细数据Excel文件
     with open(paths.jsonPath, 'r') as jsonFile:  # 打开每日数据文件
         jsonData = json.load(jsonFile)  # 读取JSON格式数据
         detailData = []  # 定义空列表，用于存储视频详细信息
@@ -42,11 +43,11 @@ def detailExcel():  # 生成详细数据Excel文件
 
 def viewsStatis(df):    #   统计播放量
     views = df['播放量']
-    views = views / 1e6
-    viewsMax = views.max()
-    viewsMin = views.min()
+    views = views / 1e5
+    bins = np.arange(0, 30.1, 2.5)
+    bins = np.append(bins, views.max())
     #   bins为区间边界， hist为区间的频数
-    hist, bins = np.histogram(views, bins=10, range=(viewsMin, viewsMax))
+    hist, _ = np.histogram(views, bins=bins)
 
     # 设置配色
     bmap = brewer2mpl.get_map('Set3', 'qualitative', 5)
@@ -54,17 +55,18 @@ def viewsStatis(df):    #   统计播放量
     plt.rcParams['font.sans-serif'] = ['SimHei'] # 设置字体，不然中文无法显示
 
     # 画图
-    plt.bar(bins[:-1], hist, width=(bins[1] - bins[0])- 0.05,
+    plt.bar(bins[:-1], hist, width=(bins[1] - bins[0]),
             align='edge', color=colors)
     # 在每个柱子顶部显示纵坐标值
     for i, v in enumerate(hist):
-        plt.text(bins[:-1][i] + 0.25, v + 1, str(v), ha='center', va='bottom')
-    plt.xlabel('播放量/百万次')
+        plt.text(bins[:-1][i] + 0.9, v + 1, str(v), ha='center', va='bottom')
+
+    plt.xlabel('播放量/十万次')
     plt.ylabel('视频数量')
     plt.title('播放量分布情况')
-    plt.savefig(paths.viewPic)
-    plt.close()
+    plt.savefig(paths.viewPic, dpi=300)
     #plt.show()
+    plt.close()
 
 def ipStatis(df):
     ip = df['ip属地']
@@ -77,14 +79,19 @@ def ipStatis(df):
     plt.rcParams['font.sans-serif'] = ['SimHei'] # 设置字体，不然中文无法显示
 
     #画图
-    plt.rcParams['figure.figsize']=(7.2, 12.8)
+    plt.rcParams['figure.figsize']=(7.2, 8.2)
     plt.barh(ipCounts.index, ipCounts.values, color = colors)
+
+    # 柱子右侧显示数值
+    for i, value in enumerate(ipCounts.values):
+        plt.text(value + 1, i, str(value), ha='left', va='center')
+
     plt.xlabel('数量')
     plt.ylabel('ip属地')
-    plt.yticks(rotation=30)
+    #plt.yticks(rotation=30)
     plt.title('ip属地分布情况')
     plt.tight_layout()
-    plt.savefig(paths.ipPic)
+    plt.savefig(paths.ipPic, dpi=300)
     #plt.show()
     plt.close()
 
@@ -93,6 +100,6 @@ def sectionStatis(df):
     sec = df['子分区']
 
 if __name__ == "__main__":
-    df = detailExcel()
+    df = detail()
     viewsStatis(df)
     ipStatis(df)
