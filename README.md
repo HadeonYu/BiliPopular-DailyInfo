@@ -10,7 +10,7 @@
 TODO：
 - [ ] ip属地存在，但获取数据为未知
 - [x] 给获取信息过程加进度条
-- [ ] 每日部分数据可视化
+- [x] 每日部分数据可视化
 - [ ] 实现每日自动更新
 
 ## 正文：
@@ -19,51 +19,93 @@ TODO：
 [详细数据](dailyData/2023/08/27/detail.md)
 
 **今日视频数量：579**
+
 ### 播放量统计
 <p align="center">
     <img src="./dailyData/2023/08/27/views.png" alt="播放量统计">
 </p>
 
+### 视频时长统计
+#### 总体：
+<p align="center">
+    <img src="./dailyData/2023/08/27/duration.png" alt="视频时长统计">
+</p>
+
+#### 短视频：
+<p align="center">
+    <img src="./dailyData/2023/08/27/duraShort.png" alt="短视频时长统计">
+</p>
+
+### 子分区
+<p align="center">
+    <img src="./dailyData/2023/08/27/section.png" alt="子分区统计">
+</p>
+
 ### ip属地统计
-<details>
-<summary>展开查看图片</summary>
 <p align="center">
     <img src="./dailyData/2023/08/27/ip.png" alt="ip属地统计">
 </p>
-</details>
 
 <h2 align=center>2023-08-26 星期六</h2>
 
 [详细数据](dailyData/2023/08/26/detail.md)
 
 **今日视频数量：582**
+
 ### 播放量统计
 <p align="center">
     <img src="./dailyData/2023/08/26/views.png" alt="播放量统计">
 </p>
 
+### 视频时长统计
+#### 总体：
+<p align="center">
+    <img src="./dailyData/2023/08/26/duration.png" alt="视频时长统计">
+</p>
+
+#### 短视频：
+<p align="center">
+    <img src="./dailyData/2023/08/26/duraShort.png" alt="短视频时长统计">
+</p>
+
+### 子分区
+<p align="center">
+    <img src="./dailyData/2023/08/26/section.png" alt="子分区统计">
+</p>
+
 ### ip属地统计
-<details>
-<summary>展开查看图片</summary>
 <p align="center">
     <img src="./dailyData/2023/08/26/ip.png" alt="ip属地统计">
 </p>
-</details>
 
 <h2 align=center>2023-08-25 星期五</h2>
 
 [详细数据](dailyData/2023/08/25/detail.md)
 
 **今日视频数量：581**
+
 ### 播放量统计
 <p align="center">
     <img src="./dailyData/2023/08/25/views.png" alt="播放量统计">
 </p>
 
+### 视频时长统计
+#### 总体：
+<p align="center">
+    <img src="./dailyData/2023/08/25/duration.png" alt="视频时长统计">
+</p>
+
+#### 短视频：
+<p align="center">
+    <img src="./dailyData/2023/08/25/duraShort.png" alt="短视频时长统计">
+</p>
+
+### 子分区
+<p align="center">
+    <img src="./dailyData/2023/08/25/section.png" alt="子分区统计">
+</p>
+
 ### ip属地统计
-<details>
-<summary>展开查看图片</summary>
 <p align="center">
     <img src="./dailyData/2023/08/25/ip.png" alt="ip属地统计">
 </p>
-</details>

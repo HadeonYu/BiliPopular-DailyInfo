@@ -1,14 +1,15 @@
-from ctypes import alignment
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import brewer2mpl
+from PIL import Image
+from wordcloud import WordCloud
 import json
 
 from Paths import Paths
 
 paths = Paths()
-paths.changeDate('2023-08-25')
+#paths.changeDate('2023-08-27')
 
 def detail():  # 生成详细数据Excel文件
     with open(paths.jsonPath, 'r') as jsonFile:  # 打开每日数据文件
@@ -45,7 +46,8 @@ def viewsStatis(df):    #   统计播放量
     views = df['播放量']
     views = views / 1e5
     bins = np.arange(0, 30.1, 2.5)
-    bins = np.append(bins, views.max())
+    if views.max() > 30:
+        bins = np.append(bins, views.max())
     #   bins为区间边界， hist为区间的频数
     hist, _ = np.histogram(views, bins=bins)
 
@@ -95,11 +97,75 @@ def ipStatis(df):
     #plt.show()
     plt.close()
 
+def durationStatis(df):
+    dura = df['平均每P时长/秒']
+    dura = dura / 60    # 秒转为分钟
+    bins = np.arange(0, 30.1, 2.5)
+    if dura.max() > 30:
+        bins = np.append(bins, dura.max())
+    hist, _ = np.histogram(dura, bins=bins)
+
+    # 设置配色
+    bmap = brewer2mpl.get_map('Set3', 'qualitative', 5)
+    colors = bmap.mpl_colors
+    plt.rcParams['font.sans-serif'] = ['SimHei'] # 设置字体，不然中文无法显示
+
+    # 画图
+    plt.bar(bins[:-1], hist, width=(bins[1] - bins[0]),
+            align='edge', color=colors)
+    # 在每个柱子顶部显示纵坐标值
+    for i, v in enumerate(hist):
+        plt.text(bins[:-1][i] + 0.9, v + 1, str(v), ha='center', va='bottom')
+
+    plt.xlabel('视频时长/分钟')
+    plt.ylabel('视频数量')
+    plt.title('视频时长总体分布情况')
+    plt.savefig(paths.duraPic, dpi=300)
+    #plt.show()
+    plt.close()
+
+    # 短视频分布情况
+    bins = np.arange(0, 5.1, 0.5)
+    hist, _ = np.histogram(dura, bins=bins)
+    plt.bar(bins[:-1], hist, width=(bins[1] - bins[0]),
+            align='edge', color=colors)
+    # 在每个柱子顶部显示纵坐标值
+    for i, v in enumerate(hist):
+        plt.text(bins[:-1][i] + 0.3, v + 1, str(v), ha='center', va='bottom')
+
+    plt.xlabel('视频时长/分钟')
+    plt.ylabel('视频数量')
+    plt.title('短视频分布情况')
+    plt.savefig(paths.duraShortPic, dpi=300)
+    #plt.show()
+    plt.close()
 
 def sectionStatis(df):
     sec = df['子分区']
+    text = ' '.join(sec)
 
-if __name__ == "__main__":
+    # 词云背景图
+    bgImg = Image.open(paths.biliLogo)
+    bgImg = np.array(bgImg)
+    # 生成词云
+    wc = WordCloud(
+        background_color='white',
+        max_words=100,
+        width=1920,
+        height=1440,
+        #mask=bgImg,
+        font_path=paths.font
+    )
+    wc.generate(text)
+    # 写入文件
+    wc.to_file(paths.sectionPic)
+
+def process():
     df = detail()
     viewsStatis(df)
     ipStatis(df)
+    durationStatis(df)
+    sectionStatis(df)
+
+if __name__ == "__main__":
+    process()

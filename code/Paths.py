@@ -24,6 +24,8 @@ class Paths:
         self.specificPath()
 
     def specificPath(self):
+        self.font = '../src/simsun.ttf' #字体文件，用于生产词云
+        self.biliLogo = '../src/biliLogo.jpeg'
         self.dailyPath = '../dailyData/' + str(self.today.date).replace('-','/')    # 每日数据文件夹路径
         self.jsonPath = self.dailyPath + '/list.json'   # JSON文件路径
         self.xlsxPath = self.dailyPath + '/detail.xlsx' # Excel文件路径
@@ -31,6 +33,7 @@ class Paths:
         self.viewPic = self.dailyPath + '/views.png'    # 播放量统计图
         self.sectionPic = self.dailyPath + '/section.png'# 视频分区
         self.duraPic = self.dailyPath + '/duration.png' # 视频时长
+        self.duraShortPic = self.dailyPath + '/duraShort.png'   # 短视频
         self.fansPic = self.dailyPath + '/fans.png'     # 粉丝数量
         self.ipPic = self.dailyPath + '/ip.png'         # ip属地
 
