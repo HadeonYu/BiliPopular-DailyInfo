@@ -25,9 +25,12 @@ TODO：
 </p>
 
 ### ip属地统计
+<details>
+<summary>展开查看图片</summary>
 <p align="center">
     <img src="./dailyData/2023/08/27/ip.png" alt="ip属地统计">
 </p>
+</details>
 
 <h2 align=center>2023-08-26 星期六</h2>
 
@@ -40,9 +43,13 @@ TODO：
 </p>
 
 ### ip属地统计
+<details>
+<summary>展开查看图片</summary>
 <p align="center">
     <img src="./dailyData/2023/08/26/ip.png" alt="ip属地统计">
 </p>
+</details>
+
 <h2 align=center>2023-08-25 星期五</h2>
 
 [详细数据](dailyData/2023/08/25/detail.md)
@@ -54,6 +61,9 @@ TODO：
 </p>
 
 ### ip属地统计
+<details>
+<summary>展开查看图片</summary>
 <p align="center">
     <img src="./dailyData/2023/08/25/ip.png" alt="ip属地统计">
 </p>
+</details>
