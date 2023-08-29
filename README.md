@@ -15,7 +15,41 @@ TODO：
 - [ ] 实现每日自动更新
 
 ## 正文：
-<h2 align=center>2023-08-28 星期一</h2>
+
+<h2 align="center">2023-08-29 星期二</h2>
+
+[详细数据](dailyData/2023/08/29/detail.md)
+
+**今日视频数量：579**
+
+### 播放量统计
+<p align="center">
+    <img src="./dailyData/2023/08/29/views.png" alt="播放量统计">
+</p>
+
+### 视频时长统计
+#### 总体：
+<p align="center">
+    <img src="./dailyData/2023/08/29/duration.png" alt="视频时长统计">
+</p>
+
+#### 短视频：
+<p align="center">
+    <img src="./dailyData/2023/08/29/duraShort.png" alt="短视频时长统计">
+</p>
+
+### 子分区
+<p align="center">
+    <img src="./dailyData/2023/08/29/section.png" alt="子分区统计">
+</p>
+
+### ip属地统计
+<p align="center">
+    <img src="./dailyData/2023/08/29/ip.png" alt="ip属地统计">
+</p>
+
+
+<h2 align="center">2023-08-28 星期一</h2>
 
 [详细数据](dailyData/2023/08/27/detail.md)
 
