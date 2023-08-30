@@ -2,17 +2,15 @@ from datetime import datetime
 
 class Today:
     def __init__(self):
-        self.date = datetime.date(datetime.now())  # 获取当前日期
-        self.year = self.date.year  # 获取当前年份
-        self.month = self.date.month  # 获取当前月份
-        self.day = self.date.day  # 获取当前日期
-        self.date = str(self.date)  # 将日期转换为字符串
+        self.date = datetime.date(datetime.now())  # 获取当前日期 
 
     def selfDef(self, date):
-        self.date = date  # 将日期属性设置为指定日期
-        dateInfo = date.split('-')  # 将日期字符串按照'-'分割为列表
-        for i in range(len(dateInfo)):
-            dateInfo[i] = int(dateInfo[i])  # 将日期字符串转换为整数
+        self.date = datetime.strptime(date, '%Y-%m-%d')
+
+    def weekday(self):  # 返回星期
+        weekdayNumber = self.date.weekday()
+        weekdayList = ['一', '二', '三', '四', '五', '六', '日']  # 获取星期做准备
+        return '星期' + weekdayList[weekdayNumber]
 
 class Paths:
     def __init__(self):
@@ -36,6 +34,7 @@ class Paths:
         self.duraShortPic = self.dailyPath + '/duraShort.png'   # 短视频
         self.fansPic = self.dailyPath + '/fans.png'     # 粉丝数量
         self.ipPic = self.dailyPath + '/ip.png'         # ip属地
+        self.statis = self.dailyPath + '/statistic.md'  # 统计结果文档
 
 
 
