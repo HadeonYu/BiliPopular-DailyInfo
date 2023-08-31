@@ -4,7 +4,7 @@ docTemplate = '''
 
 [详细数据](dailyData/{0}/detail.md)
 
-**今日视频数量：579**
+**今日视频数量：{2}**
 
 ### 播放量统计
 <p align="center">
@@ -32,6 +32,16 @@ docTemplate = '''
     <img src="./dailyData/{0}/ip.png" alt="ip属地统计">
 </p>
 '''
+
+def prepare(videoNum):
+    today = Today()
+    date = str(today.date)
+    weekday = today.weekday()
+    makeDoc(date, weekday, videoNum)
+
+
+def makeDoc(date, weekday, videoNum):
+    doc = docTemplate.format(date, weekday, videoNum)
 
 for i in range(25, 31, 1):
     date = '2023-08-' + str(i)

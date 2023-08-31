@@ -46,5 +46,7 @@ def getData():  # 定义获取数据的函数
         os.makedirs(dailyPath)  # 如果不存在，创建路径
     with open(paths.jsonPath, 'w') as daily:  # 打开每日数据文件
         json.dump(data, daily, ensure_ascii = False, indent = 2)  # 将数据写入文件，格式化输出
+        
+    return data['number']   #返回视频数量，在Doc模块中用到
 if __name__ == "__main__":
     getData()
