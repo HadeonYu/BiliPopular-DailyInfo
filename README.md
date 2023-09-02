@@ -16,6 +16,38 @@ TODO：
 
 ## 正文：
 
+<h2 align="center">2023-09-02 星期六</h2>
+
+[详细数据](dailyData/2023/09/02/detail.md)
+
+**今日视频数量：582**
+
+### 播放量统计
+<p align="center">
+    <img src="./dailyData/2023/09/02/views.png" alt="播放量统计">
+</p>
+
+### 视频时长统计
+#### 总体：
+<p align="center">
+    <img src="./dailyData/2023/09/02/duration.png" alt="视频时长统计">
+</p>
+
+#### 短视频：
+<p align="center">
+    <img src="./dailyData/2023/09/02/duraShort.png" alt="短视频时长统计">
+</p>
+
+### 子分区
+<p align="center">
+    <img src="./dailyData/2023/09/02/section.png" alt="子分区统计">
+</p>
+
+### ip属地统计
+<p align="center">
+    <img src="./dailyData/2023/09/02/ip.png" alt="ip属地统计">
+</p>
+
 <h2 align="center">2023-09-01 星期五</h2>
 
 [详细数据](dailyData/2023/09/01/detail.md)
