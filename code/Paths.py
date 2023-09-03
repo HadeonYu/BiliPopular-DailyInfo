@@ -1,11 +1,14 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 class Today:
     def __init__(self):
         self.date = datetime.date(datetime.now())  # 获取当前日期 
+        self.nextDay = str(self.date + timedelta(days=1))
 
-    def selfDef(self, date):
+    def changeDate(self, date):
         self.date = datetime.strptime(date, '%Y-%m-%d')
+        self.date = datetime.date(self.date)
+        self.nextDay = str(self.date + timedelta(days=1))
 
     def weekday(self):  # 返回星期
         weekdayNumber = self.date.weekday()
@@ -18,7 +21,7 @@ class Paths:
         self.specificPath()
 
     def changeDate(self, date):
-        self.today.selfDef(date)
+        self.today.changeDate(date)
         self.specificPath()
 
     def specificPath(self):
@@ -36,8 +39,8 @@ class Paths:
         self.ipPic = self.dailyPath + '/ip.png'         # ip属地
         self.statis = self.dailyPath + '/statistic.md'  # 统计结果文档
 
-
-
-
 if __name__ == "__main__":
-    exit()
+    # testing code
+    today = Today()
+    paths = Paths()
+    print(str(paths.today.date)[5:])
