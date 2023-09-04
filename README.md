@@ -14,6 +14,8 @@ TODO：
 
 ## 正文：
 
+<font size="4">[09-04](dailyData/2023/09/04/statistic.md)</font>
+
 <font size="4">[09-03](dailyData/2023/09/03/statistic.md)</font>
 
 <font size="4">[09-03](dailyData/2023/09/03/statistic.md)</font>
