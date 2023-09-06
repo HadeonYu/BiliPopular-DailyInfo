@@ -25,8 +25,8 @@ class Paths:
         self.specificPath()
 
     def specificPath(self):
-        self.font = '../src/simsun.ttf' #字体文件，用于生产词云
-        self.biliLogo = '../src/biliLogo.jpeg'
+        self.font = '../asset/simsun.ttf' #字体文件，用于生产词云
+        self.biliLogo = '../asset/biliLogo.jpeg'
         self.dailyPath = '../dailyData/' + str(self.today.date).replace('-','/')    # 每日数据文件夹路径
         self.jsonPath = self.dailyPath + '/list.json'   # JSON文件路径
         self.xlsxPath = self.dailyPath + '/detail.xlsx' # Excel文件路径
