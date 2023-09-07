@@ -3,12 +3,16 @@ from datetime import datetime, timedelta
 class Today:
     def __init__(self):
         self.date = datetime.date(datetime.now())  # 获取当前日期 
-        self.nextDay = str(self.date + timedelta(days=1))
+        self.set()
 
     def changeDate(self, date):
         self.date = datetime.strptime(date, '%Y-%m-%d')
         self.date = datetime.date(self.date)
-        self.nextDay = str(self.date + timedelta(days=1))
+        self.set()
+
+    def set(self):
+        self.nextDay = self.date + timedelta(days=1)
+        self.previousDay = self.date + timedelta(days=-1)
 
     def weekday(self):  # 返回星期
         weekdayNumber = self.date.weekday()
