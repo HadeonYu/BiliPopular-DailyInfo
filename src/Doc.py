@@ -47,7 +47,6 @@ def makeDoc(videoNum, isBatch):
     # 更新README
     with open('../README.md', 'r') as README:
         monthName = calendar.month_name[paths.today.date.month]
-        print(monthName)
         lines = README.readlines()
         yearLine = 0
         for i in range(len(lines)):
