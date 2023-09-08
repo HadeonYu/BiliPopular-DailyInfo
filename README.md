@@ -16,11 +16,7 @@ TODO：
 
 <h2 align="center"> 2023 </h2>
 
-<p align="center">
-	September
-</p>
-
-<center>
+### September
 
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -30,13 +26,8 @@ TODO：
 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |
 | 25 | 26 | 27 | 28 | 29 | 30 |    |
 
-</center>
 
-<p align="center">
-    August
-</p>
-
-<center>
+### August
 
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -45,4 +36,3 @@ TODO：
 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
 | 21 | 22 | 23 | 24 |[25](dailyData/2023/08/25/statistic.md)|[26](dailyData/2023/08/26/statistic.md)|[27](dailyData/2023/08/27/statistic.md)|
 |[28](dailyData/2023/08/28/statistic.md)|[29](dailyData/2023/08/29/statistic.md)|[30](dailyData/2023/08/30/statistic.md)|[31](dailyData/2023/08/31/statistic.md)|    |    |    |
-</center>

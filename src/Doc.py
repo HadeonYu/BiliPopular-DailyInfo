@@ -56,9 +56,9 @@ def makeDoc(videoNum, isBatch):
         # 新月份，写入新日历
         if paths.today.previousDay.month != paths.today.date.month and not isBatch:
             calen = makeCalendar(paths.today.date)
-            calen = '<center>\n' + calen + '</center>\n'
+            calen = '\n' + calen + '\n'
             lines.insert(yearLine, calen)
-            monthNameUpdate = '\n<p align="center">\n\t' + monthName + '\n</p>\n\n'
+            monthNameUpdate = '\n### ' + monthName + '\n'
             lines.insert(yearLine, monthNameUpdate)
             with open('../README.md', 'w') as README:
                 README.writelines(lines)
