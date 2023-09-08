@@ -56,7 +56,7 @@ def makeDoc(videoNum, isBatch):
         # 新月份，写入新日历
         if paths.today.previousDay.month != paths.today.date.month and not isBatch:
             calen = makeCalendar(paths.today.date)
-            calen = '<p align="center">\n\n' + calen + '</p>\n'
+            calen = '<center>\n' + calen + '</center>\n'
             lines.insert(yearLine, calen)
             monthNameUpdate = '\n<p align="center">\n\t' + monthName + '\n</p>\n\n'
             lines.insert(yearLine, monthNameUpdate)

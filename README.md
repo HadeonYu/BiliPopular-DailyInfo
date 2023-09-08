@@ -9,7 +9,7 @@
 
 TODO：
 - [ ] ip属地存在，但获取数据为未知
-- [ ] 日历格式展示文档
+- [x] 日历格式展示文档
 - [ ] 实现每日自动更新
 
 ## 正文：
@@ -20,7 +20,7 @@ TODO：
 	September
 </p>
 
-<p align="center">
+<center>
 
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -30,13 +30,13 @@ TODO：
 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |
 | 25 | 26 | 27 | 28 | 29 | 30 |    |
 
-</p>
+</center>
 
 <p align="center">
     August
 </p>
 
-<p align="center">
+<center>
 
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -45,4 +45,4 @@ TODO：
 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
 | 21 | 22 | 23 | 24 |[25](dailyData/2023/08/25/statistic.md)|[26](dailyData/2023/08/26/statistic.md)|[27](dailyData/2023/08/27/statistic.md)|
 |[28](dailyData/2023/08/28/statistic.md)|[29](dailyData/2023/08/29/statistic.md)|[30](dailyData/2023/08/30/statistic.md)|[31](dailyData/2023/08/31/statistic.md)|    |    |    |
-</p>
+</center>
