@@ -52,22 +52,13 @@ def makeDoc(videoNum, isBatch):
             if 'h2' in line:
                 yearLine = i + 1
                 break
-        '''
-        老版本，一日一行
-        # 写入日期超链接
-        text = str(paths.today.date)[5:]
-        text = '\n<font size="4">[' + text + ']' + '({})</font>'.format(paths.statis[3:]) + '\n'
-        lines.insert(dayLine, text)
-        with open('../README.md', 'w') as README:
-            README.writelines(lines)
-        '''
-        # 新版本，按日历格式展示
+
         # 新月份，写入新日历
         if paths.today.previousDay.month != paths.today.date.month and not isBatch:
             calen = makeCalendar(paths.today.date)
             calen = '<p align="center">\n\n' + calen + '</p>\n'
             lines.insert(yearLine, calen)
-            monthNameUpdate = '<p align="center">\n\t' + monthName + '\n</p>\n\n'
+            monthNameUpdate = '\n<p align="center">\n\t' + monthName + '\n</p>\n\n'
             lines.insert(yearLine, monthNameUpdate)
             with open('../README.md', 'w') as README:
                 README.writelines(lines)
@@ -83,10 +74,9 @@ def makeDoc(videoNum, isBatch):
             line = lines[i]
             # 找到当前日期的单元格并修改为超链接
             if day in line:
-                dayIndex = line.find(day)   # line[dayIndex] = day[0]
                 line = line.replace(
                     day,
-                    '['+day+']'+'({})'.format(paths.statis[3:])
+                    '['+day[1:len(day) -1]+']'+'({})'.format(paths.statis[3:])
                 )
                 lines[i] = line
                 break   # 不可删，否则8号可能会更新18号，28号的内容
@@ -105,7 +95,7 @@ def makeCalendar(date):
 
     for week in cal:
         mdTable += "| " + " | ".join(f"{day:2}" if day != 0 else "  " for day in week) + " |\n"
-    print(mdTable)
+    mdTable += '\n'
     return mdTable
 
 def batchProcess():

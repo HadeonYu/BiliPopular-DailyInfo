@@ -24,11 +24,12 @@ TODO：
 
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 | --- | --- | --- | --- | --- | --- | --- |
-|    |    |    |    | [ 1 ](dailyData/2023/09/01/statistic.md)| [ 2 ](dailyData/2023/09/02/statistic.md)| [ 3 ](dailyData/2023/09/03/statistic.md)|
-| [ 4 ](dailyData/2023/09/04/statistic.md)| [ 5 ](dailyData/2023/09/05/statistic.md)| [ 6 ](dailyData/2023/09/06/statistic.md)| [ 7 ](dailyData/2023/09/07/statistic.md)|  8 |  9 | 10 |
+|    |    |    |    | [1](dailyData/2023/09/01/statistic.md)| [2](dailyData/2023/09/02/statistic.md)| [3](dailyData/2023/09/03/statistic.md)|
+| [4](dailyData/2023/09/04/statistic.md)| [5](dailyData/2023/09/05/statistic.md)| [6](dailyData/2023/09/06/statistic.md)| [7](dailyData/2023/09/07/statistic.md)|  8 |  9 | 10 |
 | 11 | 12 | 13 | 14 | 15 | 16 | 17 |
 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |
 | 25 | 26 | 27 | 28 | 29 | 30 |    |
+
 </p>
 
 <p align="center">
@@ -39,42 +40,9 @@ TODO：
 
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 | --- | --- | --- | --- | --- | --- | --- |
-|    |  1 |  2 |  3 |  4 |  5 |  6 |
+|    | 1|  2 |  3 |  4 |  5 |  6 |
 |  7 |  8 |  9 | 10 | 11 | 12 | 13 |
 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
-| 21 | 22 | 23 | 24 |[ 25 ](dailyData/2023/08/25/statistic.md)|[ 26 ](dailyData/2023/08/26/statistic.md)|[ 27 ](dailyData/2023/08/27/statistic.md)|
-|[ 28 ](dailyData/2023/08/28/statistic.md)|[ 29 ](dailyData/2023/08/29/statistic.md)|[ 30 ](dailyData/2023/08/30/statistic.md)|[ 31 ](dailyData/2023/08/31/statistic.md)|    |    |    |
+| 21 | 22 | 23 | 24 |[25](dailyData/2023/08/25/statistic.md)|[26](dailyData/2023/08/26/statistic.md)|[27](dailyData/2023/08/27/statistic.md)|
+|[28](dailyData/2023/08/28/statistic.md)|[29](dailyData/2023/08/29/statistic.md)|[30](dailyData/2023/08/30/statistic.md)|[31](dailyData/2023/08/31/statistic.md)|    |    |    |
 </p>
-
-<font size="4">[09-07](dailyData/2023/09/07/statistic.md)</font>
-
-<font size="4">[09-06](dailyData/2023/09/06/statistic.md)</font>
-
-<font size="4">[09-05](dailyData/2023/09/05/statistic.md)</font>
-
-<font size="4">[09-04](dailyData/2023/09/04/statistic.md)</font>
-
-<font size="4">[09-03](dailyData/2023/09/03/statistic.md)</font>
-
-<font size="4">[09-03](dailyData/2023/09/03/statistic.md)</font>
-
-<font size="4">[09-02](dailyData/2023/09/02/statistic.md)</font>
-
-<font size="4">[09-01](dailyData/2023/09/01/statistic.md)</font>
-
-<font size="4">[08-31](dailyData/2023/08/31/statistic.md)</font>
-
-<font size="4">[08-30](dailyData/2023/08/30/statistic.md)</font>
-
-<font size="4">[08-29](dailyData/2023/08/29/statistic.md)</font>
-
-<font size="4">[08-28](dailyData/2023/08/28/statistic.md)</font>
-
-<font size="4">[08-27](dailyData/2023/08/27/statistic.md)</font>
-
-<font size="4">[08-26](dailyData/2023/08/26/statistic.md)</font>
-
-<font size="4">[08-25](dailyData/2023/08/25/statistic.md)</font>
-
-<font size="4">[08-25](dailyData/2023/08/25/statistic.md)</font>
-
