@@ -1,6 +1,7 @@
 from Paths import Paths
 import calendar
 import json
+import locale
 docTemplate = '''<h2 align="center">{0} {1}</h2>
 
 [详细数据](detail.md)
@@ -35,6 +36,7 @@ docTemplate = '''<h2 align="center">{0} {1}</h2>
 paths = Paths()
 
 def makeDoc(videoNum, isBatch):
+    locale.setlocale(locale.LC_TIME, 'en_US.UTF-8')
     weekday = paths.today.weekday()
     date = paths.today.date
     doc = docTemplate.format(date, weekday, videoNum)
@@ -45,6 +47,7 @@ def makeDoc(videoNum, isBatch):
     # 更新README
     with open('../README.md', 'r') as README:
         monthName = calendar.month_name[paths.today.date.month]
+        print(monthName)
         lines = README.readlines()
         yearLine = 0
         for i in range(len(lines)):
@@ -115,4 +118,5 @@ def batchProcess():
 
 if __name__ == "__main__":
     # testing code
-    batchProcess()
+    # batchProcess()
+    makeDoc(581, False)

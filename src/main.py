@@ -3,7 +3,7 @@ import Process
 import Doc
 
 if __name__ == "__main__":
-    videoNum = Collect.getData()
-    #Process.paths.changeDate('2023-08-25')
+    #videoNum = Collect.getData()
     Process.process()
+    videoNum = 581
     Doc.makeDoc(videoNum, False)

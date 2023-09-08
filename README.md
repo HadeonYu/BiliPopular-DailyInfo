@@ -21,7 +21,7 @@ TODO：
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 | --- | --- | --- | --- | --- | --- | --- |
 |    |    |    |    | [1](dailyData/2023/09/01/statistic.md)| [2](dailyData/2023/09/02/statistic.md)| [3](dailyData/2023/09/03/statistic.md)|
-| [4](dailyData/2023/09/04/statistic.md)| [5](dailyData/2023/09/05/statistic.md)| [6](dailyData/2023/09/06/statistic.md)| [7](dailyData/2023/09/07/statistic.md)|  8 |  9 | 10 |
+| [4](dailyData/2023/09/04/statistic.md)| [5](dailyData/2023/09/05/statistic.md)| [6](dailyData/2023/09/06/statistic.md)| [7](dailyData/2023/09/07/statistic.md)| [8](dailyData/2023/09/08/statistic.md)|  9 | 10 |
 | 11 | 12 | 13 | 14 | 15 | 16 | 17 |
 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |
 | 25 | 26 | 27 | 28 | 29 | 30 |    |
