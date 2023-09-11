@@ -145,8 +145,8 @@ def sectionStatis(df):
     text = ' '.join(sec)
 
     # 词云背景图
-    bgImg = Image.open(paths.biliLogo)
-    bgImg = np.array(bgImg)
+    #bgImg = Image.open(paths.biliLogo)
+    #bgImg = np.array(bgImg)
     # 生成词云
     wc = WordCloud(
         background_color='white',
@@ -168,5 +168,6 @@ def process():
     sectionStatis(df)
 
 if __name__ == "__main__":
-    paths.changeDate('2023-09-08')
+    #paths.changeDate('2023-09-08')
+    print(paths.today.date)
     process()
