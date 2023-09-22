@@ -23,7 +23,7 @@ TODO：
 |    |    |    |    | [1](dailyData/2023/09/01/statistic.md)| [2](dailyData/2023/09/02/statistic.md)| [3](dailyData/2023/09/03/statistic.md)|
 | [4](dailyData/2023/09/04/statistic.md)| [5](dailyData/2023/09/05/statistic.md)| [6](dailyData/2023/09/06/statistic.md)| [7](dailyData/2023/09/07/statistic.md)| [8](dailyData/2023/09/08/statistic.md)| [9](dailyData/2023/09/09/statistic.md)|[10](dailyData/2023/09/10/statistic.md)|
 |[11](dailyData/2023/09/11/statistic.md)|[12](dailyData/2023/09/12/statistic.md)|[13](dailyData/2023/09/13/statistic.md)|[14](dailyData/2023/09/14/statistic.md)|[15](dailyData/2023/09/15/statistic.md)|[16](dailyData/2023/09/16/statistic.md)|[17](dailyData/2023/09/17/statistic.md)|
-|[18](dailyData/2023/09/18/statistic.md)|[19](dailyData/2023/09/19/statistic.md)|[20](dailyData/2023/09/20/statistic.md)|[21](dailyData/2023/09/21/statistic.md)| 22 | 23 | 24 |
+|[18](dailyData/2023/09/18/statistic.md)|[19](dailyData/2023/09/19/statistic.md)|[20](dailyData/2023/09/20/statistic.md)|[21](dailyData/2023/09/21/statistic.md)|[22](dailyData/2023/09/22/statistic.md)| 23 | 24 |
 | 25 | 26 | 27 | 28 | 29 | 30 |    |
 
 
