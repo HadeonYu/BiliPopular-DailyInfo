@@ -23,7 +23,7 @@ TODO：
 | --- | --- | --- | --- | --- | --- | --- |
 |    |    |    |    |    |    | [1](dailyData/2023/10/01/statistic.md)|
 | [2](dailyData/2023/10/02/statistic.md)| [3](dailyData/2023/10/03/statistic.md)| [4](dailyData/2023/10/04/statistic.md)| [5](dailyData/2023/10/05/statistic.md)| [6](dailyData/2023/10/06/statistic.md)| [7](dailyData/2023/10/07/statistic.md)| [8](dailyData/2023/10/08/statistic.md)|
-| [9](dailyData/2023/10/09/statistic.md)|[10](dailyData/2023/10/10/statistic.md)| 11 | 12 | 13 | 14 | 15 |
+| [9](dailyData/2023/10/09/statistic.md)|[10](dailyData/2023/10/10/statistic.md)|[11](dailyData/2023/10/11/statistic.md)| 12 | 13 | 14 | 15 |
 | 16 | 17 | 18 | 19 | 20 | 21 | 22 |
 | 23 | 24 | 25 | 26 | 27 | 28 | 29 |
 | 30 | 31 |    |    |    |    |    |
