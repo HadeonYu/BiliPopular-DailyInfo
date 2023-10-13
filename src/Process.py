@@ -168,6 +168,6 @@ def process():
     sectionStatis(df)
 
 if __name__ == "__main__":
-    #paths.changeDate('2023-09-08')
+    paths.changeDate('2023-10-13')
     print(paths.today.date)
     process()

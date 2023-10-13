@@ -34,6 +34,7 @@ docTemplate = '''<h2 align="center">{0} {1}</h2>
     <img src="ip.png" alt="ip属地统计">
 </p>'''
 paths = Paths()
+paths.changeDate("2023-10-13")
 
 def makeDoc(videoNum, isBatch):
     locale.setlocale(locale.LC_TIME, 'en_US.UTF-8')
@@ -118,4 +119,4 @@ def batchProcess():
 if __name__ == "__main__":
     # testing code
     # batchProcess()
-    makeDoc(581, False)
+    makeDoc(580, False)
